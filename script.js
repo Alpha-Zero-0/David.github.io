@@ -7,7 +7,7 @@ function validateAnswers() {
     // Define correct answers
     const correctAnswers = {
         q1: '10',
-        q2: '120',
+        q2: '150',
         q3: '浩克'
     };
     
