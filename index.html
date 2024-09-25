@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="David">
-    <meta name="description" content="This is a website created for my mum">
-    <title>I LOVE YOU</title>
-    
-    <style> 
-        html {
-            font-size: 22px
-        }
-
-        body {
-            background-color: #333;
-            color: whitesmoke;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Access</title>
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-    <h1>I LOVE YOU</h1>
-    <p>OMG, I have created my first website!</p>
-    <a href="https://www.w3schools.com">This is the website where I learned from</a>
-    <img src="img1.jpg" alt="image" width="104" height="142">
-</body>
+    <h2>Answer these 3 questions correctly to proceed:</h2>
+    <form id="quizForm">
+        <label for="q1">What's your English name?</label>
+        <input type="text" id="q1" name="q1"><br><br>
 
+        <label for="q2">Which city do you currently live in?</label>
+        <input type="text" id="q2" name="q2"><br><br>
+
+        <label for="q3">What football team do you support?</label>
+        <input type="text" id="q3" name="q3"><br><br>
+
+        <button type="button" onclick="validateAnswers()">Submit</button>
+    </form>
+
+    <div id="errorMessage" style="color: red;"></div>
+</body>
 </html>
